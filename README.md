@@ -40,7 +40,7 @@
 | 项目 | 定位与说明 |
 | :--- | :--- |
 | [gkms-localify-dmm](https://git.chinosk6.cn/chinosk/gkms-localify-dmm) | 上游独立版 PC DMM 本地化与功能增强模组，支持文本/贴图替换、自由视角及窗口解锁。 |
-| [Gakumas Localify DMM (Hosted)](https://github.com/crested-ezios/gkms-localify-dmm) | 基于上游重构的 GakuLoader 插件版分支，支持多插件共存、分类目录资源管理与底层服务导出。 |
+| [gkms-localify-dmm (hosted)](https://gitee.com/Abstergo_Ezios/gkms-localify-dmm) | 基于上游重构的 GakuLoader 插件版分支，支持多插件共存、分类目录资源管理与底层服务导出。 |
 
 ---
 
