@@ -1,0 +1,4 @@
+.scan-state.json
+scan-report.md
+__pycache__/
+*.pyc
