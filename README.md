@@ -27,6 +27,8 @@
 | :--- | :--- | :--- | :--- |
 | [GakuMotion](https://github.com/crested-ezios/GakuMotion) | 基于 GakuLoader 的游戏原生演出扩展，支持 MMD/VMD 动作回放、面部表情、自由运镜、WAV 音频同步及自定义舞台（含多个活跃 Fork，见详情页）。 | [详情页](projects/gakumotion.md) | 2026-11-24 |
 | [GakuAudio](https://github.com/crested-ezios/GakuAudio) | 基于 GakuLoader 的原生音频能力插件（`gakuaudio.core/v1`），提供多格式本地音频解码、实时 DSP 空间音效与离线混音渲染。（依赖 `GakuLoader`） | — | 2026-11-23 |
+| [VideoExporter](https://github.com/crested-ezios/VideoExporter) | 基于 GakuLoader v1 的锁步视频录制与 FFmpeg 编码导出插件，支持高精度离线演出成片录制。（依赖 `GakuLoader`） | — | 2026-11-23 |
+| [ScreenshotManager](https://github.com/crested-ezios/ScreenshotManager) | 基于 GakuLoader v1 的离屏/Present 截图捕获与 ACES Alpha 透明通道提取插件。（依赖 `GakuLoader`） | — | 2026-11-23 |
 | [GakuBurstBridge](https://github.com/crested-ezios/GakuBurstBridge) | GakuMotion 的可选原生物理伴生库，将外部动作姿态传递给 Unity Burst Swing 动画流以驱动官方头发和裙摆解算。 | — | 2026-11-23 |
 | [KineTexture](https://github.com/crested-ezios/KineTexture) | 仅头文件 C++20 运动学与动作采样核心 SDK，提供稠密姿态采样、坐标转换、骨骼重定向原语与解析两骨 IK。 | — | 2026-11-08 |
 | [Gakumas Photo Studio](https://github.com/JayAlbertZhao/gakumas-photo-studio) | 基于 Unity / Tuanjie 的角色动画与场景渲染工具库（UPM 包 `Gakumas.Toolkit`）及预览应用。 | — | 2026-09-27 |
@@ -94,12 +96,10 @@
 
 ## 亟待探索与补充的方向
 
-以下方向目前尚未整理出独立条目，欢迎社区提交相关工具、实验原型或研究仓库：
+以下方向目前仍缺乏独立的公开项目或完整生态工具，欢迎社区提交相关项目、实验原型或研究仓库：
 
-- **舞台与灯光**：自定义舞台加载、灯光参数控制、后处理及演出环境扩展。
-- **录制与数据采集**：演出画面录制、动作/表情/相机轨迹导出及运行时诊断工具。
-- **非线性演出编排**：基于受控接口的多轨时间线编排器与播放器工具。
-- **格式与资产工具**：解包检查、格式转换、数据结构分析等辅助创作脚本。
+- **游戏内非线性演出编排**：与游戏内动作/镜头接口实时联动的多轨时间线编排器与导演工具。
+- **自定义舞台与环境扩展**：独立于单品插件的通用自定义舞台导入、灯光控制与后处理工具。
 
 ---
 
