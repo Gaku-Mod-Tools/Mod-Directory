@@ -1,6 +1,6 @@
 # Gaku-Mod-Tools 模组目录
 
-> 最后维护时间：2026-11-24
+> 最后维护时间：2026-11-27
 
 面向《学园偶像大师》（学園アイドルマスター / Gakuen IDOLM@STER）PC DMM 版的开源模组、插件、加载器及开发工具社区目录。
 
@@ -15,8 +15,8 @@
 | 项目 | 定位与关系 | 详情 | 最新更新时间 |
 | :--- | :--- | :--- | :--- |
 | [GakuLoader](https://github.com/Gaku-Mod-Tools/GakuLoader) | 面向 PC DMM 版的原生 DLL 插件加载器（`version.dll`），提供插件发现、生命周期管理及共享宿主服务。 | [详情页](projects/gakuloader.md) | 2026-11-23 |
-| [Gakumas Localify RE](https://github.com/chihya72/gkms-localify-dmm-RE) | 面向 PC DMM 版的插件框架（`version.dll`），提供 `Ctrl+U` 游戏内面板、插件库管理及内置字体/日志能力。 | — | 2026-11-24 |
-| [Gakumas Localify 官方插件库](https://github.com/chihya72/gkms-localify-dmm-RE-official-plugins) | `Gakumas Localify RE` 官方 14 个插件的源码与订阅源（含汉化文本/贴图、帧率、画质、窗口、物理、镜头、Live 解锁等）。（依赖 `Gakumas Localify RE`） | — | 2026-11-24 |
+| [Gakumas Localify RE](https://github.com/chihya72/gkms-localify-dmm-RE) | 面向 PC DMM 版的插件框架（`version.dll`），提供 `Ctrl+U` 游戏内面板、插件库管理及内置字体/日志能力。 | — | 2026-11-27 |
+| [Gakumas Localify 官方插件库](https://github.com/chihya72/gkms-localify-dmm-RE-official-plugins) | `Gakumas Localify RE` 官方 14 个插件的源码与订阅源（含汉化文本/贴图、帧率、画质、窗口、物理、镜头、Live 解锁等）。（依赖 `Gakumas Localify RE`） | — | 2026-11-27 |
 | [Gakumas Localify RE pm 个人插件库](https://github.com/chihya72/gkms-localify-dmm-RE-plugins-pm) | `pm` 维护的 RE 开源插件订阅源，包含 DLSS 5 神经渲染实验版（`pm.dlss5`）与游戏内照片替换支持（`pm.photoswap`）。（依赖 `Gakumas Localify RE`） | — | 2026-11-24 |
 | [Gakumas Mod Runtime](https://github.com/chihya72/gakumas-mod-runtime) | 独立的本地 AssetBundle 加载与管理插件，支持服装、发型、模型及贴图等视觉资产替换。 | — | 2026-09-10 |
 | [GakuFSR4](https://github.com/otokuso/GakuFSR4) | 基于 GakuLoader 的 AMD FSR 4 超分与帧生成实验插件，将 DX11 渲染信息桥接至 DX12 执行缩放与插帧。（依赖 `GakuLoader`） | — | 2026-11-20 |
@@ -25,7 +25,7 @@
 
 | 项目 | 定位与关系 | 详情 | 最新更新时间 |
 | :--- | :--- | :--- | :--- |
-| [GakuMotion](https://github.com/crested-ezios/GakuMotion) | 基于 GakuLoader 的游戏原生演出扩展，支持 MMD/VMD 动作回放、面部表情、自由运镜、WAV 音频同步及自定义舞台（含多个活跃 Fork，见详情页）。 | [详情页](projects/gakumotion.md) | 2026-11-23 |
+| [GakuMotion](https://github.com/crested-ezios/GakuMotion) | 基于 GakuLoader 的游戏原生演出扩展，支持 MMD/VMD 动作回放、面部表情、自由运镜、WAV 音频同步及自定义舞台（含多个活跃 Fork，见详情页）。 | [详情页](projects/gakumotion.md) | 2026-11-24 |
 | [GakuAudio](https://github.com/crested-ezios/GakuAudio) | 基于 GakuLoader 的原生音频能力插件（`gakuaudio.core/v1`），提供多格式本地音频解码、实时 DSP 空间音效与离线混音渲染。（依赖 `GakuLoader`） | — | 2026-11-23 |
 | [GakuBurstBridge](https://github.com/crested-ezios/GakuBurstBridge) | GakuMotion 的可选原生物理伴生库，将外部动作姿态传递给 Unity Burst Swing 动画流以驱动官方头发和裙摆解算。 | — | 2026-11-23 |
 | [KineTexture](https://github.com/crested-ezios/KineTexture) | 仅头文件 C++20 运动学与动作采样核心 SDK，提供稠密姿态采样、坐标转换、骨骼重定向原语与解析两骨 IK。 | — | 2026-11-08 |
@@ -38,7 +38,8 @@
 | :--- | :--- | :--- | :--- |
 | [GakumasMI](https://github.com/chihya72/gakumas-modding) | 基于 Blender 的视觉 Mod 制作流水线，用于制作服装、发型等 AssetBundle，提供模型整理、骨骼映射与导出工具链。 | — | 2026-09-10 |
 | [GakuActors](https://github.com/54yq/GakuActors) | 独立的 GakuLoader 场景人物管理插件，提供人物目录、头身预设、场景名单和实验性的独立人物加载。（依赖 `GakuLoader`） | — | 2026-11-23 |
-| [GakuSMM](https://github.com/yunjiansky-a11y/GakuSMM) | 基于 GakuLoader 的场景模型管理插件，支持场景对象分类扫描、搜索、隐藏恢复与画面划选。（依赖 `GakuLoader`） | — | 2026-11-23 |
+| [GakuSMM](https://github.com/yunjiansky-a11y/GakuSMM) | 基于 GakuLoader 的场景模型管理插件，支持场景对象分类扫描、搜索、隐藏恢复与画面划选。（依赖 `GakuLoader`） | — | 2026-11-25 |
+| [GakuSRM](https://github.com/yunjiansky-a11y/GakuSRM) | `GakuSMM` 后继升级版场景资源管理插件，新增 317 个游戏音效试听与跟随 `GakuMotion` 播放时间触发的音效时轴。（依赖 `GakuLoader`） | — | 2026-11-25 |
 | [Gakumas-PMX-Export](https://github.com/mr-quinn33/Gakumas-PMX-Export) | 用于将学马仕角色与游戏模型导出为 `.pmx` 文件的 Unity 工程。 | — | 2025-08-03 |
 | [GakuenMME](https://github.com/croakfang/GakuenMME) | 面向 MikuMikuDance 的《学园偶像大师》风格 HLSL 着色器。 | — | 2026-03-12 |
 
@@ -47,8 +48,8 @@
 | 项目 | 定位与关系 | 详情 | 最新更新时间 |
 | :--- | :--- | :--- | :--- |
 | [Gakuen-idolmaster-ab-decrypt](https://github.com/nijinekoyo/Gakuen-idolmaster-ab-decrypt) | 《学园偶像大师》AssetBundle 文件解密工具（Python）。 | — | 2024-05-27 |
-| [GkmasObjectManager](https://github.com/AllenHeartcore/GkmasObjectManager) | 基于 Python 的资源库 CLI/GUI 工具，支持清单解密导出、AssetBundle 解混淆及贴图/音视频格式转换。 | — | 2026-11-20 |
-| [GakumasAssetExplorer](https://github.com/shun-god/GakumasAssetExplorer) | 资源浏览、获取与角色语音/台词批量导出工具。（衍生自 `GkmasObjectManager`） | — | 2026-11-20 |
+| [GkmasObjectManager](https://github.com/AllenHeartcore/GkmasObjectManager) | 基于 Python 的资源库 CLI/GUI 工具，支持清单解密导出、AssetBundle 解混淆及贴图/音视频格式转换。 | — | 2026-11-26 |
+| [GakumasAssetExplorer](https://github.com/shun-god/GakumasAssetExplorer) | 资源浏览、获取与角色语音/台词批量导出工具。（衍生自 `GkmasObjectManager`） | — | 2026-11-27 |
 | [HatsuboshiToolkit](https://github.com/DreamGallery/HatsuboshiToolkit) | 学马仕游戏资源获取与解包工具集（Python）。 | — | 2026-11-16 |
 | [gakumas-music-extractor](https://github.com/Graynish-50124/gakumas-music-extractor) | 从《学园偶像大师》PC 版离线数据中检索并提取音乐资产的 Windows GUI 工具。 | — | 2026-10-21 |
 | [gkmas-delta](https://github.com/Hoshisaki-Kyogiri/gkmas-delta) | 学园偶像大师资源增量更新工具（Python）。 | — | 2026-11-14 |
@@ -81,12 +82,13 @@
 
 | 项目 | 定位与关系 | 详情 | 最新更新时间 |
 | :--- | :--- | :--- | :--- |
-| [MaaGakumasu](https://github.com/SuperWaterGod/MaaGakumasu) | 基于 MaaFramework 的自动化助手，支持日常收菜、培育与偶像之路，适配 PC DMM 版与模拟器。 | — | 2026-11-23 |
-| [Gakumas_Helper](https://github.com/Kirinigh/Gakumas_Helper) | 面向 Windows DMM PC 版测试与优化的日常、培育及竞技场胜率选敌辅助脚本。（衍生自 `MaaGakumasu`） | — | 2026-11-22 |
+| [MaaGakumasu](https://github.com/SuperWaterGod/MaaGakumasu) | 基于 MaaFramework 的自动化助手，支持日常收菜、培育与偶像之路，适配 PC DMM 版与模拟器。 | — | 2026-11-27 |
+| [Gakumas_Helper](https://github.com/Kirinigh/Gakumas_Helper) | 面向 Windows DMM PC 版测试与优化的日常、培育及竞技场胜率选敌辅助脚本。（衍生自 `MaaGakumasu`） | — | 2026-11-26 |
 | [kotones-auto-assistant (kaa)](https://github.com/XcantloadX/kotones-auto-assistant) | 自动日常与培育脚本，支持 PC DMM 版与模拟器运行。 | — | 2026-11-22 |
 | [gakumas-assistant](https://github.com/skyfsj/gakumas-assistant) | 基于 YOLO 与 OCR 的自动化辅助工具，支持 Windows PC / DMM 模式及脱离 DMMPlayer 启动。 | — | 2026-05-27 |
-| [hiro-gakumas-hero](https://github.com/matto49/hiro-gakumas-hero) | 基于大语言模型视觉识别与决策的自动打牌/培育工程框架，支持 Windows DMM 版。 | — | 2026-11-24 |
+| [hiro-gakumas-hero](https://github.com/matto49/hiro-gakumas-hero) | 基于大语言模型视觉识别与决策的自动打牌/培育工程框架，支持 Windows DMM 版。 | — | 2026-11-27 |
 | [gakumas-rehearsal-automation](https://github.com/Taka499/gakumas-rehearsal-automation) | 面向 DMM 版《学园偶像大师》的竞技场演习后台自动截图工具。 | — | 2026-09-24 |
+| [MaaGakumas](https://github.com/KiraKasumi/MaaGakumas) | 基于 MaaFramework（Windows Win32 控制器）的自动化模块，为 GakumasBench 提供 LLM 强化学习与基准测试环境交互支持。 | — | 2026-11-25 |
 
 ---
 

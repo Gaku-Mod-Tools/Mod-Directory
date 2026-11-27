@@ -13,6 +13,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -186,19 +187,26 @@ def update_readme_dates(
     return updated_rows, warnings
 
 
-def run_gh(args: list[str]) -> Any:
-    """执行 gh CLI 命令并解析 JSON 输出。"""
-    proc = subprocess.run(
-        ["gh", *args],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-    )
-    if proc.returncode != 0:
-        raise RuntimeError(proc.stderr.strip() or f"gh {' '.join(args)} 失败 (exit {proc.returncode})")
-    return json.loads(proc.stdout)
+def run_gh(args: list[str], retries: int = 3) -> Any:
+    """执行 gh CLI 命令并解析 JSON 输出（对瞬时网络 EOF 自动重试）。"""
+    last_err = ""
+    for attempt in range(retries):
+        proc = subprocess.run(
+            ["gh", *args],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+        )
+        if proc.returncode == 0:
+            return json.loads(proc.stdout)
+        last_err = proc.stderr.strip() or f"gh {' '.join(args)} 失败 (exit {proc.returncode})"
+        if attempt + 1 < retries and ("EOF" in last_err or "TLS" in last_err or "connection" in last_err.lower()):
+            time.sleep(1.0 * (attempt + 1))
+            continue
+        break
+    raise RuntimeError(last_err)
 
 
 def extract_indexed_repos(repo_root: Path) -> set[str]:

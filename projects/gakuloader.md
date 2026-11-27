@@ -37,4 +37,4 @@
 - [Issues：问题反馈与功能讨论](https://github.com/Gaku-Mod-Tools/GakuLoader/issues)
 - [Pull Requests：正在进行的代码贡献](https://github.com/Gaku-Mod-Tools/GakuLoader/pulls)
 
-**依赖此宿主的项目：** [GakuMotion](gakumotion.md)、GakuAudio、GakuActors、GakuSMM、GakuFSR4 等。
+**依赖此宿主的项目：** [GakuMotion](gakumotion.md)、GakuAudio、GakuActors、GakuSMM、GakuSRM、GakuFSR4 等。
